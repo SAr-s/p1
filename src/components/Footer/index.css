@@ -1,0 +1,10 @@
+/* Write your CSS here */
+.footer {
+  background-color: #cbd5e1;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}

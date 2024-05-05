@@ -29,44 +29,42 @@ const ConfigurationController = () => (
       return (
         <div className="controller">
           <h1 className="hea">Layout</h1>
-          <ul>
-            <li>
-              <input
-                type="checkbox"
-                id="content"
-                onChange={e => onCheckBox1(e, 'showContent')}
-                checked={showContent}
-                className="checkbox1"
-              />
-              <label htmlFor="content" className="hea1">
-                Content
-              </label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                id="leftNavbar"
-                onChange={e => onCheckBox2(e, 'showLeftNavbar')}
-                checked={showLeftNavbar}
-                className="checkbox1"
-              />
-              <label htmlFor="leftNavbar" className="hea1">
-                Left Navbar
-              </label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                id="RightNavbar"
-                onChange={e => onCheckBox3(e, 'showRightNavbar')}
-                checked={showRightNavbar}
-                className="checkbox1"
-              />
-              <label htmlFor="rightNavbar" className="hea1">
-                Right Navbar
-              </label>
-            </li>
-          </ul>
+          <div>
+            <input
+              type="checkbox"
+              id="content"
+              onChange={e => onCheckBox1(e, 'showContent')}
+              checked={showContent}
+              className="checkbox1"
+            />
+            <label htmlFor="content" className="hea1">
+              Content
+            </label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="leftNavbar"
+              onChange={e => onCheckBox2(e, 'showLeftNavbar')}
+              checked={showLeftNavbar}
+              className="checkbox1"
+            />
+            <label htmlFor="leftNavbar" className="hea1">
+              Left Navbar
+            </label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="rightNavbar"
+              onChange={e => onCheckBox3(e, 'showRightNavbar')}
+              checked={showRightNavbar}
+              className="checkbox1"
+            />
+            <label htmlFor="rightNavbar" className="hea1">
+              Right Navbar
+            </label>
+          </div>
         </div>
       )
     }}
